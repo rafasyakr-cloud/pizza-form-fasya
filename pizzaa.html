@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pemesanan Pizza😋🍕</title>
-    <link rel="shortcut icon" href="images/Latar%20Belakang%20images%20Dihapus.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/ikon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
     <!-- Header -->
      <header>
-       <h1>Form Pemesanan Pizza🍕</h1>
+       <h1 class="judul">Form Pemesanan Pizza🍕</h1>
        <p><em>pizza enaak... Cepat Sampai Ke Rumah Anda</em>😋😋</p>
 
        <nav>
@@ -20,24 +21,24 @@
          <a href="#order-form">Pesan Sekarang</a> |
          <a href="#contact">Kontak Saya</a> 
             
-         </ul> 
+        
        </nav>
      </header>
 
      <!-- Section Promo -->
       <section>
-         <h1>Promo hari ini!!</h1>
-         <img src="/Users/macbookpro/Downloads/images.jpeg" width="400" height="300" alt="PROMO MAS">
+         <h1 class="judul">Promo hari ini!!</h1>
+             <img src="images/images.jpeg" width="400" height="300" alt="PROMO MAS">
          <p><mark>Diskon 15%</mark>  untuk semua orang</p>
 
-         <ul>
-             <li>Rotinya empuk</li>
-             <li>Rsanya enak</li>
-             <li>Harganya terjangkau</li>
-         </ul>
+     
+             Rotinya empuk<br>
+             Rasanya enak<br>
+             Harganya terjangkau<br>
+        
          <!-- section menu -->
           <section id="menu">
-             <h3> Menu kami</h3>
+             <h3 class="judul"> Menu kami</h3>
              <table border="1">
               <tr>
                 <th>Nama</th>
@@ -70,7 +71,7 @@
 
 <!-- section order form -->
            <section id="order-form">
-                <h3>Pesan disini:</h3>
+                <h3>Pesan sekarang disini:</h3>
                 <form action="https://formspree.io/f/mnpaakvz" method="POST">
                       <label form="Pemesanan">Nama Anda:</label>
                       <input type="text" id="Pemesan" name="Pemesan"><br></br>
@@ -85,6 +86,7 @@
                         <option value="Medium">Medium</option>
                         <option value="Large">Large</option>
                         <option value="Super Large">Super Large</option>
+                        <option value="superrrJumbo">superrrJumbo</option>
                       </select><br><br>
 
                       <label for=""><b></b>Pilih Topping:</label>
@@ -97,7 +99,10 @@
                       <br>
                       <input type="checkbox" id="Topping" name="Topping" value="Daging Ayam"> Daging Ayam
                       <br>
-                      <input type="checkbox" id="Topping" name="Topping" value="Daging Bakso"> Bakso <br><br>
+                      <input type="checkbox" id="Topping" name="Topping" value="Daging Bakso"> Bakso
+                      <input type="checkbox" id="Topping" name="Topping" value="Daging Sapi"> Daging Sapi
+                      <input type="checkbox" id="Topping" name="Topping" value="terserah"> Terserah
+                      <br><br>
 
                       <label for="">Pilih jenis saos:</label><br>
 
@@ -114,10 +119,10 @@
                     <br><button type="submit">Kirim Sekarang</button>
                 </form>
            </section>
-            <!-- section order form -->
+            <!-- section contact -->
             <section id="contact">
-                <h3>Kontak kami</h3>
-                <p>📍JL. Raya Bogor, No. 123</p>
+                <h3 class="judul">Kontak kami</h3>
+                <p>📍JL.Raya Bogor, No. 123</p>
                 <p>📞 <a target="_blank" href="https://wa.me/6287864081772?text=Halo%20Saya%20Mau%20Pesan%20Pizza">+6287864081772</a></p>
                 <p>📧 <a href="mailto:info@pizzacafe.com">info@pizzacafe.com</a></p>
             </section>
